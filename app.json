@@ -2,6 +2,7 @@
   "expo": {
     "name": "FitnessApp",
     "slug": "FitnessApp",
+    "owner": "peytontolbert",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -12,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/83391242-534c-4865-9985-1ba987111da3"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -28,6 +30,14 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "83391242-534c-4865-9985-1ba987111da3"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
     }
   }
 }

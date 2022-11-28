@@ -1,0 +1,29 @@
+
+        <Tab.Screen name="Chat" component={ChatStackScreen} />
+        <Tab.Screen name="Events" component={EventsStackScreen} />
+        <Tab.Screen name="Training" component={TrainingStackScreen} />
+
+
+
+--------------------------------
+
+        const response = await fetch('http://192.168.0.37:8001/register', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+        username: name,
+        password: password
+        })
+      })
+      const json = await response.json()
+      .then((json) => {
+        console.log(json)
+        username = json[1]
+        navigation.reset({
+          index: 0,
+          routes: [{ name: 'Dashboard' }],
+        })
+      })
